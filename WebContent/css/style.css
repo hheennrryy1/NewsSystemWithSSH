@@ -1,0 +1,53 @@
+body {
+	font-family: Î¢ÈíÑÅºÚ,Georgia,Serif;
+}
+#news {
+	clear: left;
+}
+
+#form {
+	clear: left;
+	text-align: center;
+}
+
+#news {
+	background-color: rgba(0, 127, 255, 0.24);
+	font-family: Î¢ÈíÑÅºÚ,Georgia,Serif;
+}
+
+#news a{text-align:center;height:30px;} 
+#news a:link{color:black;text-decoration:none;} 
+#news a:visited{color:#666;text-decoration:underline;} 
+#news a:hover{color:#FFF; font-weight:bold;text-decoration:underline;background:url(arrow_on.gif) #F00 no-repeat 5px 12px;} 
+ 
+.date {
+	text-align: right;
+}
+
+table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.imagetable th {
+	background:#b5cfd2 url('../img/cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+table.imagetable td {
+	background:#dcddc0 url('../img/cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+#contact {
+	clear: left;
+	font-family: Î¢ÈíÑÅºÚ,Georgia,Serif;
+}

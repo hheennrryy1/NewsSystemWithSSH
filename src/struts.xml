@@ -1,0 +1,56 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="false"/>  
+	<package name="default" extends="struts-default">
+		<action name="findUser" class="findUserAction">
+		 	<result name="success"></result> 
+		</action>
+		
+		<action name="saveNews" class="saveNewsAction">
+		 	<result name="success" type="redirectAction">showNews</result> 
+		</action>
+		
+		<action name="showNewsForIndex" class="showNewsAction" method="showNewsForIndex">
+		 	<result name="success">newsIndex.jsp</result> 
+		</action>
+		
+		<action name="showNews" class="showNewsAction">
+		 	<result name="success">/news/index.jsp</result> 
+		</action>
+		
+		<action name="manageNews" class="showNewsAction" method="managerNews">
+		 	<result name="success">/news/manageNews.jsp</result> 
+		</action>
+		
+		<action name="findNewsToShow" class="findNewsAction" method="executeShow">
+			<result name="success">newsIndex.jsp</result>
+		</action>
+		
+		<action name="findNewsToDelete" class="findNewsAction" method="executeDelete">
+			<result name="success" type="chain">deleteNews</result>
+		</action>
+		
+		<action name="findNewsToUpdate" class="findNewsAction" method="executeUpdate">
+			<result name="success">/news/updateNews.jsp</result>
+		</action>
+		
+		<action name="findNewsByType" class="findNewsByTypeAction">
+			<result name="success">newsIndex.jsp</result>
+		</action>
+		
+		<action name="deleteNews" class="deleteNewsAction">
+			<result name="success" type="redirectAction">manageNews</result>
+		</action>
+		
+		<action name="searchNews" class="searchNewsAction">
+			<result name="success">newsIndex.jsp</result>
+		</action>
+		
+		<action name="updateNews" class="updateNewsAction">
+			<result name="success" type="redirectAction">showNews</result>
+		</action>
+		
+	</package>
+</struts>
