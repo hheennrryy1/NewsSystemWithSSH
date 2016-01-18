@@ -1,7 +1,7 @@
 #使用SSH的分类查看新闻网
 整合了struts2 + Spring4 + Hibernate4    
 数据库使用MySQL5.6        
-当你第一次运行时，首先更改WebContent/WEB-INF/applicationContext.xml中的数据库名以及、用户、密码。
+当你第一次运行时，首先更改WebContent/WEB-INF/applicationContext.xml中的数据库名、用户、密码。
 ```xml
    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/newssystem?characterEncoding=UTF-8"/>  
    <property name="user" value="root"/>  
