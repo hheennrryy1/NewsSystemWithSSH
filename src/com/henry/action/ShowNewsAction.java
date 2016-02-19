@@ -3,6 +3,7 @@ package com.henry.action;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.henry.entity.News;
@@ -10,6 +11,7 @@ import com.henry.service.NewsService;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Controller
+@Scope("prototype")
 public class ShowNewsAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	List<News> list;
